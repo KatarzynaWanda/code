@@ -1,0 +1,6 @@
+CASE 
+   WHEN SUM(net_spend_amt)>=70 THEN 'HEAVY'
+   WHEN SUM(net_spend_amt) <70 AND SUM(net_spend_amt)>=20 THEN 'MEDIUM'
+   WHEN SUM(net_spend_amt) <20 AND SUM(net_spend_amt)>0 THEN 'LOW'
+   ELSE 'ERROR'
+ END
